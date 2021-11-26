@@ -32,7 +32,11 @@
       <input class="inputbox" type="number" max="100" min="0" id="finalGrade" value="">
       <p></p>
       <div id="calc-btn">
-        <button type="button" id="calculate">Calculate</button>
+        <img src="cloud-button.png" alt="" id="calculate-overlay">
+        <img src="cloud-button.png" alt="" id="calculate">
+        <div id="calc-text" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">Calculate</div>
+
+        <!-- <button type="button" id="calculate"> </button>-->
       </div>
       <p class="subtitle" id="output"></p>
     </div>
@@ -42,7 +46,7 @@
 
 <script>
 //When calculate button is clicked, exam grade will be calculated and displayed
-document.getElementById('calculate').addEventListener("click", function(){
+document.getElementById('calculate-overlay').addEventListener("click", function(){
   if (examGrade() < 0){
     document.getElementById('output').innerHTML = 'You need at least a 0% on your final exam.';
   }
