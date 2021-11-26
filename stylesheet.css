@@ -50,8 +50,6 @@ header{
   display: block;
   border-radius: 40px;
   background-color: rgba(255, 255, 255, 0);
-  /*padding: 10px 15px 10px 15px;
-  color: #0a1d29;*/
 
   transition: box-shadow .7s ease-in-out, background-color .7s ease-in-out;
 }
