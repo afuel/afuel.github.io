@@ -72,7 +72,7 @@ document.getElementById('calculate-overlay').addEventListener("click", function(
     var finalGrade = document.getElementById('finalGrade').value;
 
     minExamGrade = (finalGrade - (currentGrade * (1 - weight_proportion))) / weight_proportion;
-    return minExamGrade;
+    return round(minExamGrade);
   }
 
 </script>
