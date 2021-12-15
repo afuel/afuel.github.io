@@ -50,10 +50,6 @@ document.getElementById('calculate-overlay').addEventListener("click", function(
   if (examGrade() < 0){
     document.getElementById('output').innerHTML = 'You need at least a 0% on your final exam.';
   }
-  //Round to two decimal places
-  else if ((examGrade() <= 100) && (examGrade().toString().includes('.'))){
-    document.getElementById('output').innerHTML = 'You need at least a ' + examGrade().toString().substring(0, 5) +  '% on your final exam.';
-  }
   else if (examGrade() <= 100){
     document.getElementById('output').innerHTML = 'You need at least a ' + examGrade() +  '% on your final exam.';
   }
