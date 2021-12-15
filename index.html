@@ -35,8 +35,6 @@
         <img src="cloud-button.png" alt="" id="calculate-overlay">
         <img src="cloud-button.png" alt="" id="calculate">
         <div id="calc-text" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">Calculate</div>
-
-        <!-- <button type="button" id="calculate"> </button>-->
       </div>
       <p class="subtitle" id="output"></p>
     </div>
@@ -45,20 +43,3 @@
 </html>
 
 <script src="grade_calculator.js"></script>
-
-<!--<script>
-//When calculate button is clicked, exam grade will be calculated and displayed
-document.getElementById('calculate-overlay').addEventListener("click", function(){
-  if (examGrade() < 0){
-    document.getElementById('output').innerHTML = 'You need at least a 0% on your final exam.';
-  }
-  else if (examGrade() <= 100){
-    document.getElementById('output').innerHTML = 'You need at least a ' + examGrade() +  '% on your final exam.';
-  }
-  else if (examGrade() > 100){
-    document.getElementById('output').innerHTML = 'You cannot achieve your desired grade.';
-  }
-
-});
-
-</script>-->
